@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サービスLP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="scrollable-section">
+            <div class="content-block">
+                <h2>サービスの特徴</h2>
+                <p>当サービスは、ビジネスの成長をサポートするための完全なソリューションを提供します。</p>
+                
+                <ul class="feature-list">
+                    <li>
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <h3>使いやすいインターフェース</h3>
+                            <p>直感的な操作性で、技術的な知識がなくても簡単に利用できます。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <h3>高度な分析機能</h3>
+                            <p>リアルタイムデータと詳細な分析で、ビジネスの意思決定をサポートします。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <h3>安全なデータ保護</h3>
+                            <p>最新のセキュリティ技術で、お客様の大切なデータを保護します。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="content-block">
+                <h2>導入事例</h2>
+                <div class="testimonial">
+                    <p class="testimonial-text">「このサービスを導入してから、業務効率が30%向上しました。チーム全体の生産性が高まり、顧客満足度も上がりました。」</p>
+                    <p class="testimonial-author">株式会社テック 代表取締役</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">「使いやすさと高機能性を兼ね備えたサービスで、導入後すぐに効果を実感できました。サポートも充実しており、安心して利用できています。」</p>
+                    <p class="testimonial-author">デザイン工房 クリエイティブディレクター</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">「コスト削減と業務効率化を同時に実現できました。この投資は間違いなく価値がありました。」</p>
+                    <p class="testimonial-author">グローバル商事 マーケティング部長</p>
+                </div>
+            </div>
+            
+            <div class="content-block">
+                <h2>料金プラン</h2>
+                <p>ビジネスの規模や目的に合わせて、最適なプランをお選びいただけます。</p>
+                
+                <div class="feature-list">
+                    <li>
+                        <div class="feature-icon">⭐</div>
+                        <div class="feature-text">
+                            <h3>スタンダードプラン</h3>
+                            <p>月額10,000円〜<br>基本機能をすべて利用可能。小規模ビジネスに最適。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">⭐⭐</div>
+                        <div class="feature-text">
+                            <h3>ビジネスプラン</h3>
+                            <p>月額25,000円〜<br>拡張機能と優先サポート付き。成長中の企業に最適。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">⭐⭐⭐</div>
+                        <div class="feature-text">
+                            <h3>エンタープライズプラン</h3>
+                            <p>お問い合わせください<br>カスタマイズ可能な完全なソリューション。大規模企業向け。</p>
+                        </div>
+                    </li>
+                </div>
+                
+                <button class="cta-button" style="margin-top: 2rem;">プランを詳しく見る</button>
+            </div>
+            
+            <div class="content-block">
+                <h2>お問い合わせ</h2>
+                <p>ご質問やご不明点がございましたら、お気軽にお問い合わせください。専門スタッフが丁寧にご対応いたします。</p>
+                <p>Email: info@example.com</p>
+                <p>電話: 03-1234-5678（平日 9:00-18:00）</p>
+                <button class="cta-button" style="margin-top: 2rem;">お問い合わせフォーム</button>
+            </div>
+        </div>
+
+        <div class="fixed-section">
+            <h1>サービス名</h1>
+            <p>あなたのビジネスを次のレベルへ。簡単に、効率的に、そして確実に。</p>
+            <button class="cta-button">いますぐ始める</button>
+        </div>
+    </div>
+
+    <div class="chat-bot" id="chatBot">
+        <div class="chat-icon">💬</div>
+    </div>
+
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">
+            <span>サポートチャット</span>
+            <span class="close-chat" id="closeChat">✕</span>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">こんにちは！何かお手伝いできることはありますか？</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="メッセージを入力...">
+            <button id="sendMessage">➤</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
