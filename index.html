@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>マルナゲAI</title>
+    <title>マルナゲAI - ビジネスのためのAIソリューション</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./src/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="site-header">
@@ -15,23 +16,31 @@
             </a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="about.html">会社情報</a></li>
-                    <li><a href="https://note.com/yourcompany" target="_blank">ブログ</a></li>
-                    <li><a href="news.html">ニュース</a></li>
+                    <li><a href="#features">サービス紹介</a></li>
+                    <li><a href="#use-cases">活用シーン</a></li>
+                    <li><a href="#flow">導入の流れ</a></li>
                     <li><a href="#contact" class="nav-cta">無料相談</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-toggle">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#features">サービス紹介</a></li>
+                <li><a href="#use-cases">活用シーン</a></li>
+                <li><a href="#flow">導入の流れ</a></li>
+                <li><a href="#contact" class="nav-cta-mobile">無料相談</a></li>
+            </ul>
+        </div>
     </header>
 
     <div class="container">
         <div class="scrollable-section">
-            <div class="content-block hero-block">
+            <div class="content-block hero-block" id="hero">
                 <h1>その仕事、AIに<br>マルナゲしませんか？</h1>
                 <p class="hero-subtitle">業務効率化・自動化・PRまで。あなたのビジネスに合わせたAIソリューションを提供します。</p>
                 <div class="cta-buttons">
@@ -46,60 +55,80 @@
             
             <div class="content-block" id="features">
                 <h2>サービスの特徴</h2>
-                <p>当サービスは、ビジネスの成長をサポートするための完全なソリューションを提供します。</p>
+                <p>AIを活用してビジネスの成長をサポートする完全なソリューションを提供します。</p>
                 
-                <ul class="feature-list">
-                    <li>
-                        <div class="feature-icon">✓</div>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
                         <div class="feature-text">
                             <h3>使いやすいインターフェース</h3>
                             <p>直感的な操作性で、技術的な知識がなくても簡単に利用できます。AIキャラクターによる対話型インターフェースで、より親しみやすく使いやすい体験を提供します。</p>
+                        </div>
+                        <div class="feature-image-container">
                             <img src="./src/images/interface.jpg" alt="使いやすいインターフェースイメージ" class="feature-image">
                         </div>
-                    </li>
-                    <li>
-                        <div class="feature-icon">✓</div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
                         <div class="feature-text">
                             <h3>多様な媒体対応</h3>
                             <p>Web、SNS、アプリ、音声デバイスなど、様々な媒体に対応可能です。貴社のプロモーションやマーケティング活動を一貫したAIキャラクターでサポートします。</p>
-                            <img src="./src/images/multichannel.jpg" alt="多様な媒体対応イメージ" class="feature-image">
                         </div>
-                    </li>
-                    <li>
-                        <div class="feature-icon">✓</div>
+                        <div class="feature-image-container">
+                            <img src="./src/images/analytics.jpg" alt="多様な媒体対応イメージ" class="feature-image">
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
                         <div class="feature-text">
                             <h3>PRやマーケティングにも活用可能</h3>
                             <p>単なる業務効率化だけでなく、AIキャラクターを活用したPRやマーケティング活動も可能です。ブランドの個性を反映したAIが顧客とのエンゲージメントを高めます。</p>
-                            <img src="./src/images/marketing.jpg" alt="PRとマーケティングイメージ" class="feature-image">
                         </div>
-                    </li>
-                </ul>
+                        <div class="feature-image-container">
+                            <img src="./src/images/security.jpg" alt="PRとマーケティングイメージ" class="feature-image">
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="content-block">
+            <div class="content-block" id="use-cases">
                 <h2>活用シーン</h2>
                 <div class="use-cases">
                     <div class="use-case-item">
-                        <img src="./src/images/usecase-1.jpg" alt="顧客対応の自動化" class="use-case-image">
+                        <div class="use-case-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
                         <h3>顧客対応の自動化</h3>
                         <p>24時間365日、一貫した品質で顧客からの問い合わせに対応。人的リソースを創造的な業務に集中させることができます。</p>
                     </div>
                     
                     <div class="use-case-item">
-                        <img src="./src/images/usecase-2.jpg" alt="社内Q&A" class="use-case-image">
+                        <div class="use-case-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
                         <h3>社内Q&A</h3>
                         <p>社内ルールや手順に関する問い合わせをAIが自動回答。新人教育や業務効率化に貢献します。</p>
                     </div>
                     
                     <div class="use-case-item">
-                        <img src="./src/images/usecase-3.jpg" alt="ブランドPR" class="use-case-image">
+                        <div class="use-case-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
                         <h3>ブランドPR</h3>
                         <p>SNSやWebサイトでAIキャラクターがブランドの顔に。一貫したトーンとメッセージでファンを増やします。</p>
                     </div>
                 </div>
             </div>
             
-            <div class="content-block">
+            <div class="content-block" id="flow">
                 <h2>導入までの流れ</h2>
                 <div class="flow-diagram">
                     <div class="flow-step">
@@ -176,7 +205,7 @@
                             <label for="privacyPolicy"><a href="privacy-policy.html" target="_blank">プライバシーポリシー</a>に同意の上、送信ください<span class="required-mark">*</span></label>
                         </div>
                         
-                        <button type="submit" class="submit-button">送信する</button>
+                        <button type="submit" class="submit-button">無料相談を申し込む</button>
                     </form>
                 </div>
             </div>
@@ -184,13 +213,40 @@
 
         <div class="fixed-section">
             <img src="./src/images/logo.png" alt="マルナゲAI" class="service-logo">
-            <h2 class="catchcopy">その仕事、AIに<br>マルナゲしませんか？</h2>
-            <button class="cta-button js-scroll-to-contact">無料相談はこちら</button>
+            <h2 class="catchcopy">AIで業務を効率化<br>未来のビジネスへ</h2>
+            <a href="#contact" class="cta-button">無料相談はこちら</a>
             
             <!-- チャットボット案内 -->
             <div class="chatbot-intro">
                 <p>右下のチャットボタンで<br>すぐに質問できます！</p>
                 <div class="chat-arrow">↘</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-button" id="chatButton">
+            <i class="fas fa-comment"></i>
+        </div>
+        <div class="chat-popup" id="chatPopup">
+            <div class="chat-header">
+                <h3>マルナゲAIサポート</h3>
+                <button class="close-chat" id="closeChat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-body">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        こんにちは！マルナゲAIサポートです。どのようなことでお悩みですか？
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="messageInput" placeholder="メッセージを入力...">
+                    <button id="sendMessage">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -205,6 +261,8 @@
                     <h3>サービス</h3>
                     <ul>
                         <li><a href="#features">特徴</a></li>
+                        <li><a href="#use-cases">活用シーン</a></li>
+                        <li><a href="#flow">導入の流れ</a></li>
                         <li><a href="#contact">無料相談</a></li>
                     </ul>
                 </div>
@@ -234,11 +292,11 @@
     <script>
      window.difyChatbotConfig = {
       token: 'M7w6zCgfzlVSfFbs',
-      baseUrl: 'http://dify.animastudio.jp'
+      baseUrl: 'https://dify.animastudio.jp'
      }
     </script>
     <script
-     src="http://dify.animastudio.jp/embed.min.js"
+     src="https://dify.animastudio.jp/embed.min.js"
      id="M7w6zCgfzlVSfFbs"
      defer>
     </script>
