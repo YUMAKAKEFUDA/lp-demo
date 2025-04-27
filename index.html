@@ -16,10 +16,12 @@
             </a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#features">サービス紹介</a></li>
-                    <li><a href="#use-cases">活用シーン</a></li>
-                    <li><a href="#flow">導入の流れ</a></li>
+                    <li><a href="#features">サービス</a></li>
+                    <li><a href="video.html">紹介動画</a></li>
+                    <li><a href="company.html">会社情報</a></li>
+                    <li><a href="https://note.com/yourcompany" target="_blank">ブログ</a></li>
                     <li><a href="#contact" class="nav-cta">無料相談</a></li>
+                    <li><a href="#contact" class="contact-btn">お問い合わせ</a></li>
                 </ul>
             </nav>
             <button class="mobile-menu-toggle" id="mobileMenuToggle">
@@ -30,10 +32,12 @@
         </div>
         <div class="mobile-nav" id="mobileNav">
             <ul>
-                <li><a href="#features">サービス紹介</a></li>
-                <li><a href="#use-cases">活用シーン</a></li>
-                <li><a href="#flow">導入の流れ</a></li>
+                <li><a href="#features">サービス</a></li>
+                <li><a href="video.html">紹介動画</a></li>
+                <li><a href="company.html">会社情報</a></li>
+                <li><a href="https://note.com/yourcompany" target="_blank">ブログ</a></li>
                 <li><a href="#contact" class="nav-cta-mobile">無料相談</a></li>
+                <li><a href="#contact" class="contact-btn-mobile">お問い合わせ</a></li>
             </ul>
         </div>
     </header>
@@ -166,91 +170,73 @@
             <div class="content-block" id="contact">
                 <h2>無料相談</h2>
                 <div class="contact-form-container">
-                    <div class="contact-form-title">まずは、初回無料相談！</div>
-                    <div class="contact-form-description">下記フォームへの必要項目ご記入の上、送信ください</div>
-                    
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label class="form-label">会社名<span class="required-mark">*</span></label>
-                            <input type="text" class="form-control" placeholder="株式会社〇〇〇〇〇〇" required>
-                        </div>
+                    <div class="contact-form-wrapper">
+                        <div class="contact-form-title">まずは、初回無料相談！</div>
+                        <div class="contact-form-description">下記フォームへの必要項目ご記入の上、送信ください</div>
                         
-                        <div class="form-group">
-                            <label class="form-label">所属部署<span class="required-mark">*</span></label>
-                            <input type="text" class="form-control" placeholder="DX推進室" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label">お名前<span class="required-mark">*</span></label>
-                            <input type="text" class="form-control" placeholder="山田太郎" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label">メールアドレス<span class="required-mark">*</span></label>
-                            <input type="email" class="form-control" placeholder="sample@example.com" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label">電話番号<span class="required-mark">*</span></label>
-                            <input type="tel" class="form-control" placeholder="08012345678" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label">お問い合わせ内容／お悩み</label>
-                            <textarea class="form-control" placeholder="AIを活用して解決したい課題や質問などをご記入ください"></textarea>
-                        </div>
-                        
-                        <div class="form-checkbox">
-                            <input type="checkbox" id="privacyPolicy" required>
-                            <label for="privacyPolicy"><a href="privacy-policy.html" target="_blank">プライバシーポリシー</a>に同意の上、送信ください<span class="required-mark">*</span></label>
-                        </div>
-                        
-                        <button type="submit" class="submit-button">無料相談を申し込む</button>
-                    </form>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label class="form-label">会社名<span class="required-mark">*</span></label>
+                                <input type="text" class="form-control" placeholder="株式会社〇〇〇〇〇〇" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">所属部署<span class="required-mark">*</span></label>
+                                <input type="text" class="form-control" placeholder="DX推進室" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">お名前<span class="required-mark">*</span></label>
+                                <input type="text" class="form-control" placeholder="山田太郎" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">メールアドレス<span class="required-mark">*</span></label>
+                                <input type="email" class="form-control" placeholder="sample@example.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">電話番号<span class="required-mark">*</span></label>
+                                <input type="tel" class="form-control" placeholder="08012345678" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">お問い合わせ内容／お悩み</label>
+                                <textarea class="form-control" placeholder="AIを活用して解決したい課題や質問などをご記入ください"></textarea>
+                            </div>
+                            
+                            <div class="form-privacy-policy">
+                                <a href="privacy-policy.html" target="_blank" class="privacy-policy-link">プライバシーポリシー</a>に同意の上、送信ください<span class="required-mark">*</span>
+                                <div class="checkbox-wrapper">
+                                    <input type="checkbox" id="privacyPolicy" required>
+                                    <label for="privacyPolicy" class="checkbox-label"></label>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">送信する</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="fixed-section">
-            <img src="./src/images/logo.png" alt="マルナゲAI" class="service-logo">
-            <h2 class="catchcopy">AIで業務を効率化<br>未来のビジネスへ</h2>
-            <a href="#contact" class="cta-button">無料相談はこちら</a>
-            
-            <!-- チャットボット案内 -->
-            <div class="chatbot-intro">
-                <p>右下のチャットボタンで<br>すぐに質問できます！</p>
-                <div class="chat-arrow">↘</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="chat-widget" id="chatWidget">
-        <div class="chat-button" id="chatButton">
-            <i class="fas fa-comment"></i>
-        </div>
-        <div class="chat-popup" id="chatPopup">
-            <div class="chat-header">
-                <h3>マルナゲAIサポート</h3>
-                <button class="close-chat" id="closeChat">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="chat-body">
-                <div class="chat-messages" id="chatMessages">
-                    <div class="message bot-message">
-                        こんにちは！マルナゲAIサポートです。どのようなことでお悩みですか？
-                    </div>
-                </div>
-                <div class="chat-input">
-                    <input type="text" id="messageInput" placeholder="メッセージを入力...">
-                    <button id="sendMessage">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
+            <div class="fixed-content">
+                <img src="./src/images/logo.png" alt="マルナゲAI" class="service-logo">
+                <h2 class="slogan">その仕事、AIに<br>マルナゲしませんか？</h2>
+                <h3 class="catchcopy">AIで業務を効率化<br>未来のビジネスへ</h3>
+                <a href="#contact" class="cta-button fixed-cta">無料相談はこちら</a>
+                
+                <!-- チャットボット案内 -->
+                <div class="chatbot-intro">
+                    <p>右下のチャットボタンで<br>すぐに質問できます！</p>
+                    <div class="chat-arrow">↘</div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- 独自のチャットウィジェットは削除し、Difyのみを使用 -->
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-logo">
@@ -289,6 +275,7 @@
         </div>
     </footer>
 
+    <!-- Difyチャットボットの設定 -->
     <script>
      window.difyChatbotConfig = {
       token: 'M7w6zCgfzlVSfFbs',
@@ -300,6 +287,15 @@
      id="M7w6zCgfzlVSfFbs"
      defer>
     </script>
+    <style>
+     #dify-chatbot-bubble-button {
+       background-color: #ff3366 !important; /* マルナゲAIのテーマカラーに変更 */
+     }
+     #dify-chatbot-bubble-window {
+       width: 24rem !important;
+       height: 40rem !important;
+     }
+    </style>
 
     <script src="script.js"></script>
 </body>

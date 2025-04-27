@@ -36,63 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // チャットボット機能
-    const chatButton = document.getElementById('chatButton');
-    const chatPopup = document.getElementById('chatPopup');
-    const closeChat = document.getElementById('closeChat');
-    const messageInput = document.getElementById('messageInput');
-    const sendMessage = document.getElementById('sendMessage');
-    const chatMessages = document.getElementById('chatMessages');
-    
-    if (chatButton && chatPopup) {
-        // チャットアイコンをクリックしたらポップアップを表示
-        chatButton.addEventListener('click', () => {
-            chatPopup.classList.toggle('active');
-        });
-    }
-    
-    if (closeChat && chatPopup) {
-        // 閉じるボタンをクリックしたらポップアップを非表示
-        closeChat.addEventListener('click', () => {
-            chatPopup.classList.remove('active');
-        });
-    }
-    
-    if (sendMessage && messageInput && chatMessages) {
-        // メッセージ送信処理
-        function sendUserMessage() {
-            const message = messageInput.value.trim();
-            if (!message) return;
-            
-            // メッセージ処理
-            displayMessage(message, 'user-message');
-            messageInput.value = '';
-            
-            // 自動返信
-            setTimeout(() => {
-                displayMessage('ありがとうございます。スタッフが確認次第、ご返信いたします。', 'bot-message');
-            }, 1000);
-        }
-        
-        function displayMessage(text, className) {
-            const messageElement = document.createElement('div');
-            messageElement.classList.add('message', className);
-            messageElement.textContent = text;
-            chatMessages.appendChild(messageElement);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-        
-        // 送信ボタンクリックでメッセージ送信
-        sendMessage.addEventListener('click', sendUserMessage);
-        
-        // Enterキーでもメッセージを送信
-        messageInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                sendUserMessage();
-            }
-        });
-    }
-    
     // コンタクトフォーム送信時の処理
     const contactForm = document.getElementById('contactForm');
     
